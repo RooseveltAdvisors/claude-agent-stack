@@ -33,7 +33,7 @@ claude-config/
 ### 1. Fork or clone this repo
 
 ```bash
-git clone https://github.com/JonRoosevelt/pai-claude-config ~/git/claude-config
+git clone https://github.com/RooseveltAdvisors/pai-claude-config ~/git/claude-config
 cd ~/git/claude-config
 ```
 
