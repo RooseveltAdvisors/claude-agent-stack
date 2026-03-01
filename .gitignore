@@ -1,0 +1,41 @@
+# Sensitive / personal
+settings.json
+settings.local.json
+*.env
+
+# Auto-generated / runtime
+__pycache__/
+*.py[cod]
+*.js
+node_modules/
+skill-index.json
+stats-cache.json
+mcp-needs-auth-cache.json
+agent-sessions.json
+
+# Session data (large, ephemeral)
+history.jsonl
+history/
+projects/
+telemetry/
+statsig/
+cache/
+paste-cache/
+shell-snapshots/
+session-env/
+downloads/
+debug/
+tasks/
+plans/
+file-history/
+stats-cache.json
+
+# Backups (stay local)
+Backups/
+
+# OS
+.DS_Store
+
+# Legacy artifacts
+.stfolder/
+.stignore

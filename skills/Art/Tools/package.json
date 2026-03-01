@@ -1,0 +1,13 @@
+{
+  "name": "art-tools",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "latest"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "openai": "latest",
+    "replicate": "latest"
+  }
+}

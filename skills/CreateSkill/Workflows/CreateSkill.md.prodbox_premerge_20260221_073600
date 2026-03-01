@@ -1,0 +1,82 @@
+# CreateSkill Workflow
+
+> **Trigger:** "create a new skill", "new skill for [topic]"
+
+## Purpose
+
+Create a new skill following the mandatory SKILL.md format.
+
+## Prerequisites
+
+**READ FIRST:** `$PAI_DIR/skills/CORE/SkillSystem.md`
+
+## Workflow Steps
+
+### Step 1: Gather Requirements
+
+Ask the user:
+1. What is the skill's purpose?
+2. What triggers should invoke it?
+3. What workflows will it contain?
+
+### Step 2: Create Directory Structure
+
+```bash
+SKILL_NAME="SkillName"  # TitleCase!
+mkdir -p $PAI_DIR/skills/$SKILL_NAME/Workflows
+mkdir -p $PAI_DIR/skills/$SKILL_NAME/Tools
+```
+
+### Step 3: Create SKILL.md
+
+```markdown
+---
+name: SkillName
+description: [What it does]. USE WHEN [trigger1] OR [trigger2]. [Additional info].
+---
+
+# SkillName
+
+[Brief description]
+
+## Workflow Routing
+
+| Workflow | Trigger | File |
+|----------|---------|------|
+| **WorkflowName** | "trigger phrase" | `Workflows/WorkflowName.md` |
+
+## Examples
+
+**Example 1: [Use case]**
+\`\`\`
+User: "[Request]"
+→ Invokes [workflow]
+→ [Result]
+\`\`\`
+```
+
+### Step 4: Create Initial Workflows
+
+Create the workflow files referenced in the routing table.
+
+### Step 5: Regenerate Index
+
+```bash
+bun run $PAI_DIR/Tools/GenerateSkillIndex.ts
+```
+
+### Step 6: Verify
+
+```bash
+bun run $PAI_DIR/Tools/SkillSearch.ts [skill-name]
+```
+
+## Checklist
+
+- [ ] Directory uses TitleCase
+- [ ] SKILL.md has frontmatter with `name` and `description`
+- [ ] Description includes `USE WHEN` clause
+- [ ] Workflow Routing table exists
+- [ ] Examples section with 2-3 patterns
+- [ ] Tools/ directory created
+- [ ] Skill index regenerated
