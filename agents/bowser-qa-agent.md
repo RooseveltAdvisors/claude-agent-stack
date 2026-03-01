@@ -82,7 +82,7 @@ Verify the homepage of http://example.com loads and shows a hero section
 
 ### Step-by-step imperative
 ```
-Login to http://example.com (email: user@test.com, pw: secret123).
+Login to http://example.com (email: user@example.com, pw: [YOUR_TEST_PASSWORD]).
 Navigate to /dashboard.
 Verify there are at least 3 widgets.
 ```
@@ -97,7 +97,7 @@ Then I should see a list of widgets
 ### Checklist
 ```
 url: http://example.com/dashboard
-auth: user@test.com / secret123
+auth: user@example.com / [YOUR_TEST_PASSWORD]
 - [ ] Dashboard loads
 - [ ] At least 3 widgets visible
 - [ ] Clicking a widget opens detail view

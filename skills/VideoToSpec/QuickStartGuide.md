@@ -37,7 +37,7 @@ The skill will:
 ### With Transcript
 
 ```
-User: "Analyze this UrgentIQ demo and create a detailed spec: https://loom.com/share/..."
+User: "Analyze this HealthApp demo and create a detailed spec: https://loom.com/share/..."
 
 Include transcript:
 [paste transcript here]
@@ -96,7 +96,7 @@ By default, specs are saved to `.agent/specs/{product-name}/`
 ### Multiple Videos (Comparison)
 
 ```
-User: "Create specs for UrgentIQ and NextGen EMR, then compare them"
+User: "Create specs for HealthApp and EHRSystem, then compare them"
 
 Video 1: https://loom.com/share/urgentiq-demo
 Video 2: https://loom.com/share/nextgen-demo
@@ -203,7 +203,7 @@ User: "Consolidate to top 10 most important screens"
 
 ## Example Output
 
-See the UrgentIQ spec created in this session:
+See the HealthApp spec created in this session:
 
 **Location:** `.agent/specs/urgentiq/`
 
@@ -223,7 +223,7 @@ See the UrgentIQ spec created in this session:
 - Advanced MD billing integration
 - Telehealth capabilities
 - Technical architecture
-- Detailed comparison with NextGen
+- Detailed comparison with EHRSystem
 - Pricing and licensing
 
 ## Customization

@@ -86,7 +86,7 @@ Use at session start, before merges, or when disoriented.
 
 ```bash
 onecontext update-main --section "Purpose" \
-  --content "Full-stack Next.js portal for healthcare analytics. Core features: SEO analysis, marketing sync, patient engagement dashboards."
+  --content "Full-stack Next.js SaaS portal. Core features: analytics dashboard, data sync, user engagement reporting."
 ```
 
 ```bash

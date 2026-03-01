@@ -12,7 +12,7 @@ interface PreToolUsePayload {
 
 // Trusted endpoints that bypass exfiltration checks
 const TRUSTED_ENDPOINTS = [
-  'playground.intellinum.co:8000',  // Whisper transcription server
+  // Add your trusted endpoints here, e.g., 'your-api-server.com:8000'
 ];
 
 // Attack pattern categories

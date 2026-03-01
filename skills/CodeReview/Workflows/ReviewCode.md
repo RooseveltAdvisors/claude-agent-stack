@@ -101,7 +101,7 @@ except Exception as e:
 
 **Exceptions:** The following files are exempt from this check:
 - `app/utils/database.py` (defines the `transaction()` method itself)
-- `app/utils/patient_db.py` (database initialization and migration code)
+- `app/utils/data_store.py` (database initialization and migration code)
 - Any `init_db()`, `_migrate()`, or `_ensure_tables()` methods (one-time setup, not concurrent)
 
 **What to flag:**
@@ -115,7 +115,7 @@ FINDING: app/utils/kpi_store.py:210 - bare self.db.commit() without transaction(
 SEVERITY: High
 FIX: Wrap the surrounding write operations in `with self.db.transaction():` block
 
-FINDING: app/utils/card_on_file_service.py:213 - patient_db.commit() outside transaction
+FINDING: app/utils/billing_service.py:213 - data_store.commit() outside transaction
 SEVERITY: High
 FIX: Move this write into the existing transaction() block or create a new one
 ```
