@@ -1,4 +1,4 @@
-# pai-claude-config
+# claude-agent-stack
 
 > A personal Claude Code configuration system — version-controlled, multi-machine, and extensible. Built on top of [Personal AI Infrastructure (PAI)](https://github.com/danielmiessler/Personal_AI_Infrastructure) by Daniel Miessler.
 
@@ -33,7 +33,7 @@ claude-config/
 ### 1. Fork or clone this repo
 
 ```bash
-git clone https://github.com/RooseveltAdvisors/pai-claude-config ~/git/claude-config
+git clone https://github.com/RooseveltAdvisors/claude-agent-stack ~/git/claude-config
 cd ~/git/claude-config
 ```
 
